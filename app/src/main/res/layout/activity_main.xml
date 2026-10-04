@@ -115,18 +115,36 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/rentEditText" />
 
+
+        <TextView
+            android:id="@+id/tenantNameDisplayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:padding="8dp"
+            android:text="@{tenant.name}"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rentEditText" />
+
         <TextView
             android:id="@+id/tenantResultTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{tenant.summary()}"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
             android:hint="Saved tenant will appear here"
+            android:padding="8dp"
+            android:text="@{tenant.summary()}"
             android:textSize="18sp"
-            android:padding="16dp"
-            android:layout_margin="24dp"
-            app:layout_constraintTop_toBottomOf="@id/rentEditText"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/tenantNameDisplayTextView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
