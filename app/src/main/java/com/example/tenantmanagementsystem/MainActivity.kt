@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             val rent = binding.rentEditText.text.toString()
             val tenant = Tenant(name, phone, rent)
             binding.tenant = tenant
+
+            binding.tenantNameEditText.text?.clear()
+            binding.phoneEditText.text?.clear()
+            binding.rentEditText.text?.clear()
         }
     }
 }
