@@ -5,6 +5,6 @@ data class Tenant(
     val rent: String
 ) {
     fun summary(): String {
-        return "Tenant: $name\nPhone: $phone\nRent: KSh $rent"
+        return "Tenant: $name, Phone: $phone, Rent paid: KSh $rent"
     }
 }
